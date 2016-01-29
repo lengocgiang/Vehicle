@@ -25,14 +25,6 @@ class VehicleDetailViewController: UIViewController {
         if let vehicle = detailVehicle {
             // TODO: Fill this in.
             title = vehicle.vehicleTitle
-            /*
-            var basicDetails = "Basic vehicle details : \n\n"
-            basicDetails += "Brand name: \(vehicle.brandName)\n"
-            basicDetails += "Model name: \(vehicle.modelName)\n"
-            basicDetails += "Model year: \(vehicle.modelYear)\n"
-            basicDetails += "Power source: \(vehicle.powerSource)\n"
-            basicDetails += "# of wheels: \(vehicle.numberOfWhells)\n"
-            */
             detailDescriptionLabel?.text = vehicle.vehicleDetail
             
         }
@@ -45,14 +37,29 @@ class VehicleDetailViewController: UIViewController {
     
     @IBAction func goForward(sender: AnyObject) {
         // TODO: Fill this in.
+        // if let vehicle statement makes sure that vehicle exists, and if it does
+        // creates an alert controller using extension and presents it.
+        
+        if let vehicle = detailVehicle {
+            let controller = UIAlertController.alertControllerWithTitle("Go forward", message: vehicle.goForward())
+            presentViewController(controller, animated: true, completion: nil)
+        }
     }
     
     @IBAction func goBackward(sender: AnyObject) {
         // TODO: Fill this in.
+        if let vehicle = detailVehicle {
+            let controller = UIAlertController.alertControllerWithTitle("Go backward", message: vehicle.goBackward())
+            presentViewController(controller, animated: true, completion: nil)
+        }
     }
     
     @IBAction func stopMoving(sender: AnyObject) {
         // TODO: Fill this in.
+        if let vehicle = detailVehicle {
+            let controller = UIAlertController.alertControllerWithTitle("Stop moving", message: vehicle.stopMoving())
+            presentViewController(controller, animated: true, completion: nil)
+        }
     }
     
     @IBAction func turn(sender: AnyObject) {
@@ -61,6 +68,10 @@ class VehicleDetailViewController: UIViewController {
     
     @IBAction func makeNoise(sender: AnyObject) {
         // TODO: Fill this in.
+        if let vehicle = detailVehicle {
+            let controller = UIAlertController.alertControllerWithTitle("Make some noise!", message: vehicle.makeNoise())
+            presentViewController(controller, animated: true, completion: nil)
+        }
     }
     
 }

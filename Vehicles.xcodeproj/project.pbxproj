@@ -14,6 +14,7 @@
 		5102A3FD1C5B574F003FEB83 /* Motocycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3FA1C5B574F003FEB83 /* Motocycle.swift */; };
 		5102A3FE1C5B574F003FEB83 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3FB1C5B574F003FEB83 /* Vehicle.swift */; };
 		5102A4001C5B6461003FEB83 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3FF1C5B6461003FEB83 /* Truck.swift */; };
+		5102A4031C5B770A003FEB83 /* UIAlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A4021C5B770A003FEB83 /* UIAlertController+Convenience.swift */; };
 		5DC89C6419BE274D00A75324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6319BE274D00A75324 /* AppDelegate.swift */; };
 		5DC89C6619BE274D00A75324 /* VehicleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6519BE274D00A75324 /* VehicleListTableViewController.swift */; };
 		5DC89C6819BE274D00A75324 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6719BE274D00A75324 /* VehicleDetailViewController.swift */; };
@@ -42,6 +43,7 @@
 		5102A3FA1C5B574F003FEB83 /* Motocycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motocycle.swift; sourceTree = "<group>"; };
 		5102A3FB1C5B574F003FEB83 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		5102A3FF1C5B6461003FEB83 /* Truck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		5102A4021C5B770A003FEB83 /* UIAlertController+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Convenience.swift"; sourceTree = "<group>"; };
 		5DC89C5E19BE274D00A75324 /* Vehicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vehicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC89C6219BE274D00A75324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC89C6319BE274D00A75324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		5102A4011C5B76F8003FEB83 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				5102A4021C5B770A003FEB83 /* UIAlertController+Convenience.swift */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 		5DC89C5519BE274D00A75324 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		5DC89C6019BE274D00A75324 /* Vehicles */ = {
 			isa = PBXGroup;
 			children = (
+				5102A4011C5B76F8003FEB83 /* category */,
 				5102A3F81C5B574F003FEB83 /* model */,
 				5DC89C6319BE274D00A75324 /* AppDelegate.swift */,
 				5DC89C6519BE274D00A75324 /* VehicleListTableViewController.swift */,
@@ -247,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5102A4031C5B770A003FEB83 /* UIAlertController+Convenience.swift in Sources */,
 				5102A3FE1C5B574F003FEB83 /* Vehicle.swift in Sources */,
 				5102A3941C5A15BD003FEB83 /* NavigationController.swift in Sources */,
 				5DC89C6819BE274D00A75324 /* VehicleDetailViewController.swift in Sources */,
