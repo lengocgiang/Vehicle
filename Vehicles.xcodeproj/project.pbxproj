@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5102A3901C5A027B003FEB83 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A38F1C5A027B003FEB83 /* Car.swift */; };
 		5102A3921C5A0D5A003FEB83 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5102A3911C5A0D5A003FEB83 /* Launch Screen.storyboard */; };
 		5102A3941C5A15BD003FEB83 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3931C5A15BD003FEB83 /* NavigationController.swift */; };
 		5102A3981C5A1B34003FEB83 /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3971C5A1B34003FEB83 /* UINavigationController+Additions.m */; };
+		5102A3FC1C5B574F003FEB83 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3F91C5B574F003FEB83 /* Car.swift */; };
+		5102A3FD1C5B574F003FEB83 /* Motocycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3FA1C5B574F003FEB83 /* Motocycle.swift */; };
+		5102A3FE1C5B574F003FEB83 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3FB1C5B574F003FEB83 /* Vehicle.swift */; };
+		5102A4001C5B6461003FEB83 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A3FF1C5B6461003FEB83 /* Truck.swift */; };
 		5DC89C6419BE274D00A75324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6319BE274D00A75324 /* AppDelegate.swift */; };
 		5DC89C6619BE274D00A75324 /* VehicleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6519BE274D00A75324 /* VehicleListTableViewController.swift */; };
 		5DC89C6819BE274D00A75324 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6719BE274D00A75324 /* VehicleDetailViewController.swift */; };
 		5DC89C6B19BE274D00A75324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC89C6919BE274D00A75324 /* Main.storyboard */; };
 		5DC89C6D19BE274D00A75324 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC89C6C19BE274D00A75324 /* Images.xcassets */; };
 		5DC89C7919BE274D00A75324 /* VehiclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C7819BE274D00A75324 /* VehiclesTests.swift */; };
-		5DC89C8319BE289D00A75324 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C8219BE289D00A75324 /* Vehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5102A38F1C5A027B003FEB83 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		5102A3911C5A0D5A003FEB83 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5102A3931C5A15BD003FEB83 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		5102A3951C5A1B33003FEB83 /* Vehicles-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vehicles-Bridging-Header.h"; sourceTree = "<group>"; };
 		5102A3961C5A1B34003FEB83 /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Additions.h"; sourceTree = "<group>"; };
 		5102A3971C5A1B34003FEB83 /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
+		5102A3F91C5B574F003FEB83 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		5102A3FA1C5B574F003FEB83 /* Motocycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motocycle.swift; sourceTree = "<group>"; };
+		5102A3FB1C5B574F003FEB83 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		5102A3FF1C5B6461003FEB83 /* Truck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
 		5DC89C5E19BE274D00A75324 /* Vehicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vehicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC89C6219BE274D00A75324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC89C6319BE274D00A75324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +52,6 @@
 		5DC89C7219BE274D00A75324 /* VehiclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VehiclesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC89C7719BE274D00A75324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC89C7819BE274D00A75324 /* VehiclesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesTests.swift; sourceTree = "<group>"; };
-		5DC89C8219BE289D00A75324 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5102A3F81C5B574F003FEB83 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5102A3FB1C5B574F003FEB83 /* Vehicle.swift */,
+				5102A3F91C5B574F003FEB83 /* Car.swift */,
+				5102A3FA1C5B574F003FEB83 /* Motocycle.swift */,
+				5102A3FF1C5B6461003FEB83 /* Truck.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		5DC89C5519BE274D00A75324 = {
 			isa = PBXGroup;
 			children = (
@@ -89,10 +104,9 @@
 		5DC89C6019BE274D00A75324 /* Vehicles */ = {
 			isa = PBXGroup;
 			children = (
+				5102A3F81C5B574F003FEB83 /* model */,
 				5DC89C6319BE274D00A75324 /* AppDelegate.swift */,
 				5DC89C6519BE274D00A75324 /* VehicleListTableViewController.swift */,
-				5DC89C8219BE289D00A75324 /* Vehicle.swift */,
-				5102A38F1C5A027B003FEB83 /* Car.swift */,
 				5DC89C6719BE274D00A75324 /* VehicleDetailViewController.swift */,
 				5DC89C6919BE274D00A75324 /* Main.storyboard */,
 				5DC89C6C19BE274D00A75324 /* Images.xcassets */,
@@ -233,13 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DC89C8319BE289D00A75324 /* Vehicle.swift in Sources */,
+				5102A3FE1C5B574F003FEB83 /* Vehicle.swift in Sources */,
 				5102A3941C5A15BD003FEB83 /* NavigationController.swift in Sources */,
 				5DC89C6819BE274D00A75324 /* VehicleDetailViewController.swift in Sources */,
-				5102A3901C5A027B003FEB83 /* Car.swift in Sources */,
+				5102A3FD1C5B574F003FEB83 /* Motocycle.swift in Sources */,
+				5102A3FC1C5B574F003FEB83 /* Car.swift in Sources */,
 				5DC89C6619BE274D00A75324 /* VehicleListTableViewController.swift in Sources */,
 				5102A3981C5A1B34003FEB83 /* UINavigationController+Additions.m in Sources */,
 				5DC89C6419BE274D00A75324 /* AppDelegate.swift in Sources */,
+				5102A4001C5B6461003FEB83 /* Truck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
