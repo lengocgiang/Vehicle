@@ -75,7 +75,7 @@ class VehicleListTableViewController: UITableViewController {
         let prius = Car()
         prius.create("Toyota", modelName: "Prius", modelYear: 2002, isConvertible: true, isHatchback: false, hasSunroof: true, numberOfDoors: 4, powerSource: "hybrid engine")
         vehicles.append(prius)
-        
+            
         // Create motocycle
         let harley = Motocycle()
         harley.brandName = "Harley-Davidson"
