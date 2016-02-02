@@ -14,7 +14,7 @@ class VehicleListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupVehicleArray()
+        //setupVehicleArray()
         title = "Vehicle"
     }
     
@@ -23,7 +23,8 @@ class VehicleListTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let vehicle = vehicles[indexPath.row]
+                //let vehicle = vehicles[indexPath.row]
+                let vehicle = VehicleList.sharedInstance.vehicles[indexPath.row]
                 (segue.destinationViewController as! VehicleDetailViewController).detailVehicle = vehicle
             }
         }
@@ -36,13 +37,14 @@ class VehicleListTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vehicles.count
+        return VehicleList.sharedInstance.vehicles.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        let vehicle = vehicles[indexPath.row]
+        //let vehicle = vehicles[indexPath.row]
+        let vehicle = VehicleList.sharedInstance.vehicles[indexPath.row]
         cell.textLabel?.text = "\(vehicle.vehicleTitle)"
         
         return cell
@@ -55,63 +57,59 @@ class VehicleListTableViewController: UITableViewController {
         self.navigationController?.pushViewController(detailVC, withCustomTransition: CustomViewAnimationTransitionPush, subtype: nil)
     }
     */
+    
     // MARK: Data setup
     func setupVehicleArray() {
         
+        // Clear the array. (Start from scratch.)
         vehicles.removeAll(keepCapacity: true)
         
-        // Create a car
-        let mustang = Car()
-        mustang.create("Ford", modelName: "Mustang", modelYear: 1968, isConvertible: true, isHatchback: false, hasSunroof: false, numberOfDoors: 2, powerSource: "Gas engine")
-        // add to the array
+        // Create a car.
+        let mustang = Car(brandName: "Ford", modelName: "Mustang", modelYear: 1968, powerSource: "gas engine",
+            isConvertible: true, isHatchback: false, hasSunroof: false, numberOfDoors: 2)
+        
+        // Add it to the array
         vehicles.append(mustang)
         
-        // Create onother car
-        let outback = Car()
-        outback.create("Subaru", modelName: "Outback", modelYear: 1999, isConvertible: false, isHatchback: true, hasSunroof: false, numberOfDoors: 5, powerSource: "Gas engine")
+        // Create another car.
+        let outback = Car(brandName: "Subaru", modelName: "Outback", modelYear: 1999, powerSource: "gas engine",
+            isConvertible: false, isHatchback: true, hasSunroof: false, numberOfDoors: 5)
+        
+        // Add it to the array.
         vehicles.append(outback)
         
         // Create another car
-        let prius = Car()
-        prius.create("Toyota", modelName: "Prius", modelYear: 2002, isConvertible: true, isHatchback: false, hasSunroof: true, numberOfDoors: 4, powerSource: "hybrid engine")
+        let prius = Car(brandName: "Toyota", modelName: "Prius", modelYear: 2002, powerSource: "hybrid engine",
+            isConvertible: false, isHatchback: true, hasSunroof: true, numberOfDoors: 4)
+        
+        // Add it to the array.
         vehicles.append(prius)
-            
-        // Create motocycle
-        let harley = Motocycle()
-        harley.brandName = "Harley-Davidson"
-        harley.modelName = "Softail"
-        harley.modelYear = 1979
-        harley.engineNoise = "Vrrrrrrrooooooom"
+        
+        // Create a motorcycle
+        let harley = Motocycle(brandName: "Harley-Davidson", modelName: "Softail", modelYear: 1979, engineNoise: "Vrrrrrrrroooooooooom!")
+        
+        // Add it to the array.
         vehicles.append(harley)
         
-        // Create 
-        let kawasaki = Motocycle()
-        kawasaki.brandName = "Kawasaki"
-        kawasaki.modelName = "Ninja"
-        kawasaki.modelYear = 2005
-        kawasaki.engineNoise = "Neeeeeeeeeeeeow!"
-        vehicles.append(kawasaki)
+        // Create another motorcycle
+        let kawasaki = Motocycle(brandName: "Kawasaki", modelName: "Ninja", modelYear: 2005,
+            engineNoise: "Neeeeeeeeeeeeeeeeow!")
         
-        // Create truck
-        let silverado = Truck()
-        silverado.brandName = "Chevrolet"
-        silverado.modelName = "Silverado"
-        silverado.modelYear = 2011
-        silverado.numberOfWhells = 4
-        silverado.cargoCapacityCubcFeet = 53
-        silverado.powerSource = "gas engine"
+        // Add it to the array
+        self.vehicles.append(kawasaki)
+        
+        // Create a truck
+        let silverado = Truck(brandName: "Chevrolet", modelName: "Silverado", modelYear: 2011,
+            powerSource: "gas engine", numberOfWheels: 4, cargoCapacityCubcFeet: 53)
+        
+        // Add it to the array
         vehicles.append(silverado)
         
-        // create another truck
-        let eighteenWheeler = Truck()
-        eighteenWheeler.brandName = "Peterbilt"
-        eighteenWheeler.modelName = "579"
-        eighteenWheeler.modelYear = 2013
-        eighteenWheeler.numberOfWhells = 18
-        eighteenWheeler.cargoCapacityCubcFeet = 408
-        eighteenWheeler.powerSource = "diesel engine"
+        // Create another truck
+        let eighteenWheeler = Truck(brandName: "Peterbilt", modelName: "579", modelYear: 2013, powerSource: "diesel engine", numberOfWheels: 18, cargoCapacityCubcFeet: 408)
+        
+        // Add it to the array
         vehicles.append(eighteenWheeler)
-   
         // Sort the array by model year
         vehicles.sortInPlace{$0.modelYear < $1.modelYear}
         

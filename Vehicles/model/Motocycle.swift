@@ -9,15 +9,14 @@
 import Foundation
 
 class Motocycle: Vehicle {
-    override init() {
-        super.init()
-        numberOfWhells = 2
-        powerSource = "Gas engine"
+
+    let engineNoise: String
+    
+    init(brandName: String, modelName: String, modelYear: Int, engineNoise:String) {
+        self.engineNoise = engineNoise
+        super.init(brandName: brandName, modelName: modelName, modelYear: modelYear, powerSource: "Gas engine", numberOfWheels: 2)
     }
-    var engineNoise = ""
-    
-    // MARK: 
-    
+    // MARK:
     override var vehicleDetail: String {
         let basicDetail = super.vehicleDetail
         

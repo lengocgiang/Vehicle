@@ -9,7 +9,12 @@
 import Foundation
 
 class Truck: Vehicle {
-    var cargoCapacityCubcFeet: Int = 0
+    let cargoCapacityCubcFeet: Int
+    
+    init(brandName: String, modelName: String, modelYear: Int, powerSource: String, numberOfWheels: Int,cargoCapacityCubcFeet:Int) {
+        self.cargoCapacityCubcFeet = cargoCapacityCubcFeet
+        super.init(brandName: brandName, modelName: modelName, modelYear: modelYear, powerSource: powerSource, numberOfWheels: numberOfWheels)
+    }
     
     // MARK: Private methods
     

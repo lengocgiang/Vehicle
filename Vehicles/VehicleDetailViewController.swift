@@ -35,6 +35,13 @@ class VehicleDetailViewController: UIViewController {
         configureView()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if let vehicle = detailVehicle {
+            print(vehicle)
+        }
+    }
+    
     @IBAction func goForward(sender: AnyObject) {
         // TODO: Fill this in.
         // if let vehicle statement makes sure that vehicle exists, and if it does

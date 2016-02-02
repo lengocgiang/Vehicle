@@ -9,11 +9,20 @@
 import Foundation
 
 class Vehicle {
-    var brandName = "null"
-    var modelName = "null"
-    var modelYear = 0
-    var powerSource = "null"
-    var numberOfWhells = 0
+    let brandName :String
+    let modelName :String
+    let modelYear :Int
+    let powerSource :String
+    let numberOfWhells :Int
+    
+    // MARK: Initialization methods
+    init(brandName:String,modelName:String,modelYear:Int,powerSource:String,numberOfWheels:Int){
+        self.brandName = brandName
+        self.modelName = modelName
+        self.modelYear = modelYear
+        self.powerSource = powerSource
+        self.numberOfWhells = numberOfWheels
+    }
     
     var vehicleTitle:String {
         return String(format: "%d %@ %@", modelYear,brandName,modelName)
@@ -58,6 +67,12 @@ class Vehicle {
     
     func makeNoise()->String {
         return "null"
+    }
+}
+
+extension Vehicle: CustomStringConvertible {
+    var description:String {
+        return vehicleTitle + "\n" + vehicleDetail
     }
 }
 
