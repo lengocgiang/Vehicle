@@ -3,7 +3,7 @@
 //  Vehicles
 //
 //  Created by Le Ngoc Giang on 2/2/16.
-//  Copyright © 2016 Razeware, LLC. All rights reserved.
+//  Copyright © 2016 gianglengoc. All rights reserved.
 //
 
 import Foundation
